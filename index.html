@@ -1,13 +1,332 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>スポーツ・部活相談室</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>スポーツ現場の実務メンターマッチング｜指導者のための相談プラットフォーム</title>
+  <meta name="description" content="スポーツ現場の経験豊富なメンターに、練習・保護者対応・チーム運営の悩みを相談できるマッチングプラットフォーム。相談投稿は無料。メール相談5,000円〜、音声通話12,000円〜の固定料金制。">
+  <meta property="og:title" content="スポーツ現場の実務メンターマッチング｜指導者のための相談プラットフォーム">
+  <meta property="og:description" content="不安や悩みを抱える指導者をサポートします。経験豊富なメンターに、練習・保護者対応・チーム運営の悩みを相談できます。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mkzugfel.gensparkspace.com/">
+  <meta property="og:locale" content="ja_JP">
+  <link rel="canonical" href="https://mkzugfel.gensparkspace.com/">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>スポーツ・部活相談室</h1>
-  <p>公開テストページです。</p>
+
+  <!-- ========== Header ========== -->
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand">スポーツ現場の実務メンターマッチング</a>
+      <nav class="nav-links">
+        <a href="index.html">ホーム</a>
+        <a href="consult.html">相談投稿</a>
+        <a href="experts.html">メンター一覧・募集</a>
+        <a href="mentoring.html">運営サポート</a>
+        <a href="instructor.html">団体向け</a>
+        <a href="qa.html">Q&amp;A</a>
+        <a href="legal.html">利用規約</a>
+        <a class="btn btn-primary btn-sm" href="consult.html">無料で相談投稿</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== Hero ========== -->
+  <section class="hero">
+    <div class="container">
+      <h1>不安や悩みを抱える指導者を<br>サポートします</h1>
+      <p>スポーツ現場の経験豊富なメンターに、練習・保護者対応・チーム運営の悩みを相談できるプラットフォームです。<br>相談投稿は無料。まずはあなたの状況を教えてください。</p>
+      <div class="hero-badges">
+        <span class="hero-badge">相談投稿 無料</span>
+        <span class="hero-badge">固定料金制</span>
+        <span class="hero-badge">プラットフォーム決済</span>
+        <span class="hero-badge">サッカー・野球・バスケ 他多数対応</span>
+      </div>
+      <div class="hero-buttons">
+        <a class="btn btn-primary btn-lg" href="consult.html">相談を投稿する →</a>
+        <a class="btn btn-white btn-lg" href="experts.html">メンターとして登録する</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Photo Row ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="photo-row">
+        <div class="photo-item">
+          <!-- TODO_IMAGE_URL_1: スポーツ指導の現場写真（サッカーなど） -->
+          <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&h=400&fit=crop" alt="サッカー指導の現場">
+          <div class="photo-caption">現場経験豊富な指導者</div>
+        </div>
+        <div class="photo-item">
+          <!-- TODO_IMAGE_URL_2: チームミーティング・バスケなど -->
+          <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?w=600&h=400&fit=crop" alt="チームミーティング">
+          <div class="photo-caption">実践的なアドバイス</div>
+        </div>
+        <div class="photo-item">
+          <!-- TODO_IMAGE_URL_3: 個別相談・コーチング風景 -->
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600&h=400&fit=crop" alt="スポーツ指導の様子">
+          <div class="photo-caption">安心の相談環境</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 3つの強み ========== -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">3つの強み</h2>
+      <p class="section-lead text-center">はじめての方でも安心してご利用いただけます</p>
+      <div class="grid grid-3">
+        <div class="feature-card">
+          <div class="feature-icon">📝</div>
+          <h3>相談投稿は無料</h3>
+          <p>まずは悩みを投稿するだけ。メンター候補の紹介を受けるまで費用はかかりません。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3>経験あるメンターが対応</h3>
+          <p>あなたの悩みと希望条件に合うメンターを事務局がご紹介します。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>料金は固定・安心決済</h3>
+          <p>4つの固定プランから選択。プラットフォーム上で安心して決済できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 料金プラン ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">明瞭料金プラン</h2>
+      <p class="section-lead text-center">料金は完全固定制です。メンターによる価格変動はありません。表示料金以外の追加請求はありません。</p>
+      <div class="pricing-grid">
+        <!-- Plan A -->
+        <div class="pricing-card">
+          <div class="plan-type">メール相談</div>
+          <div class="plan-name">プランA</div>
+          <div class="plan-price">5,000<span>円（税込）</span></div>
+          <div class="plan-note">質問400字以内 / 回答400字以内 / 1往復</div>
+          <ul>
+            <li>メールで質問・回答</li>
+            <li>システム利用料込み</li>
+            <li>ニックネーム利用可</li>
+          </ul>
+          <a class="btn btn-outline btn-sm" href="consult.html">このプランで相談</a>
+          <div class="plan-fee">※システム利用料：1,000円＋決済手数料</div>
+        </div>
+        <!-- Plan B -->
+        <div class="pricing-card popular">
+          <div class="plan-type">メール相談</div>
+          <div class="plan-name">プランB</div>
+          <div class="plan-price">10,000<span>円（税込）</span></div>
+          <div class="plan-note">質問400字以内 / 回答400字以内 / 1往復</div>
+          <ul>
+            <li>メールで質問・回答</li>
+            <li>システム利用料込み</li>
+            <li>ニックネーム利用可</li>
+            <li>経験豊富なメンターが集まりやすい</li>
+          </ul>
+          <a class="btn btn-primary btn-sm" href="consult.html">このプランで相談</a>
+          <div class="plan-fee">※システム利用料：1,000円＋決済手数料</div>
+        </div>
+        <!-- Plan C -->
+        <div class="pricing-card">
+          <div class="plan-type">音声通話</div>
+          <div class="plan-name">プランC（30分）</div>
+          <div class="plan-price">12,000<span>円（税込）</span></div>
+          <div class="plan-note">ブラウザ通話 / Zoom・30分</div>
+          <ul>
+            <li>リアルタイム音声相談</li>
+            <li>顔出しなしOK</li>
+            <li>システム利用料込み</li>
+          </ul>
+          <a class="btn btn-outline btn-sm" href="consult.html">このプランで相談</a>
+          <div class="plan-fee">※システム利用料：3,000円＋決済手数料</div>
+        </div>
+        <!-- Plan D -->
+        <div class="pricing-card">
+          <div class="plan-type">音声通話</div>
+          <div class="plan-name">プランD（60分）</div>
+          <div class="plan-price">20,000<span>円（税込）</span></div>
+          <div class="plan-note">ブラウザ通話 / Zoom・60分</div>
+          <ul>
+            <li>じっくり音声相談</li>
+            <li>顔出しなしOK</li>
+            <li>システム利用料込み</li>
+          </ul>
+          <a class="btn btn-outline btn-sm" href="consult.html">このプランで相談</a>
+          <div class="plan-fee">※システム利用料：3,000円＋決済手数料</div>
+        </div>
+      </div>
+      <p class="text-center text-small text-light mt-3">✔ 相談料にはシステム利用料が含まれています ✔ 表示料金以外の追加請求はありません<br>より高いプランを選ぶと、メンターへの報酬が高くなるため、経験豊富なメンターからの応募が集まりやすくなります。</p>
+    </div>
+  </section>
+
+  <!-- ========== こんな悩みに対応 ========== -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">こんな悩みに対応しています</h2>
+      <p class="section-lead text-center">サッカー・野球・バスケ・バレー・陸上・テニス・卓球・水泳・武道など、競技を問わず対応</p>
+      <div class="grid grid-4">
+        <div class="card">
+          <span class="card-icon">📋</span>
+          <h3>指導・チームづくり</h3>
+          <p>練習メニュー設計、選手育成、モチベーション管理、試合采配など</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">👥</span>
+          <h3>保護者対応</h3>
+          <p>保護者との関わり方、クレーム対応、チーム内コミュニケーション</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">⚙️</span>
+          <h3>クラブ・チーム運営</h3>
+          <p>会計処理、スケジュール管理、イベント企画、組織体制づくり</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">💪</span>
+          <h3>トレーニング・コンディショニング</h3>
+          <p>トレーニングメニュー、怪我予防、リカバリー、コンディション管理</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 利用の流れ ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">利用の流れ</h2>
+      <p class="section-lead text-center">相談投稿〜メンター候補の紹介まで無料。メンターを選択し決済した時点で料金が発生します。</p>
+      <div class="container-narrow" style="margin:0 auto;">
+        <div class="steps">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>無料で相談を投稿</h3>
+              <p>相談フォームで悩みを投稿。ニックネーム利用可。希望する相談方式・プランを選択し、メンター条件を指定します。</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>事務局がメンター候補をご紹介</h3>
+              <p>事務局が内容を確認し、条件に合うメンターに案内。対応可能なメンターが応募し、候補をご紹介します。</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>メンターを選んで決済</h3>
+              <p>紹介されたメンター候補からお選びいただき、プラットフォーム上で決済を完了します。</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>相談を実施</h3>
+              <p>メール相談またはブラウザ通話/Zoomで、経験豊富なメンターから実践的なアドバイスを受けられます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== できること・できないこと ========== -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="text-center">本サービスでできること・できないこと</h2>
+      <div class="can-cannot mt-3">
+        <div class="can-box">
+          <h3>✅ できること</h3>
+          <ul>
+            <li>スポーツ現場での実務的な悩みの相談</li>
+            <li>指導・運営・保護者対応の実践的アドバイス</li>
+            <li>経験者からの情報提供・ノウハウ共有</li>
+            <li>チームビルディング・メンタルコーチング</li>
+            <li>トレーニング・コンディショニングの助言</li>
+          </ul>
+        </div>
+        <div class="cannot-box">
+          <h3>❌ できないこと</h3>
+          <ul>
+            <li>法律相談・法的助言</li>
+            <li>税務相談・税務代理</li>
+            <li>医療行為・診断・治療</li>
+            <li>心理療法</li>
+            <li>職業紹介・雇用あっせん</li>
+          </ul>
+          <p class="text-small text-light mt-2">※法律・税務・医療が必要な場合は、専門機関をご案内します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 対応競技 ========== -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>対応競技</h2>
+      <p class="section-lead">特定の競技に限定しません。幅広いスポーツに対応しています。</p>
+      <div class="mt-3" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
+        <span class="badge badge-outline">サッカー</span>
+        <span class="badge badge-outline">野球・ソフトボール</span>
+        <span class="badge badge-outline">バスケットボール</span>
+        <span class="badge badge-outline">バレーボール</span>
+        <span class="badge badge-outline">陸上</span>
+        <span class="badge badge-outline">テニス</span>
+        <span class="badge badge-outline">卓球</span>
+        <span class="badge badge-outline">水泳</span>
+        <span class="badge badge-outline">武道</span>
+        <span class="badge badge-outline">その他スポーツ全般</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>まずは無料で相談を投稿してみてください</h2>
+        <p>スポーツ現場を知るメンターが、あなたの悩みに実践的にアドバイスします。<br>相談投稿は無料です。メール相談なら5,000円から気軽にご利用いただけます。</p>
+        <a class="btn btn-primary btn-lg" href="consult.html">相談を投稿する →</a>
+        <a class="btn btn-white btn-lg" href="experts.html">メンターとして登録する</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>サービス</h4>
+          <a href="index.html">ホーム</a>
+          <a href="consult.html">相談を投稿する</a>
+          <a href="experts.html">メンター一覧・募集</a>
+          <a href="mentoring.html">運営サポート</a>
+          <a href="instructor.html">団体向け相談</a>
+        </div>
+        <div class="footer-col">
+          <h4>サポート</h4>
+          <a href="qa.html">よくある質問</a>
+          <a href="legal.html">利用規約</a>
+          <a href="legal.html#privacy">プライバシーポリシー</a>
+          <a href="legal.html#tokusho">特定商取引法に基づく表記</a>
+        </div>
+        <div class="footer-col">
+          <h4>注意事項</h4>
+          <p style="font-size:12px;color:#8a9fb5;line-height:1.6;">本サービスは法律相談、税務相談、医療行為、診断、治療、心理療法を目的としたサービスではありません。</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 スポーツ現場の実務メンターマッチング All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

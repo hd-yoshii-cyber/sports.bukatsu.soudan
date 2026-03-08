@@ -1,77 +1,389 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>無料相談 | スポーツ・部活動相談室</title>
-  <meta name="description" content="スポーツ・部活動に関する無料相談窓口。匿名相談OK、48時間以内に初回返信。" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>相談を投稿する｜スポーツ現場の実務メンターマッチング</title>
+  <meta name="description" content="スポーツ現場の悩みを無料で投稿。条件に合うメンターを事務局がお探しします。メール相談5,000円〜、音声通話12,000円〜。">
+  <meta property="og:title" content="相談を投稿する｜スポーツ現場の実務メンターマッチング">
+  <meta property="og:description" content="まずは無料で悩みを投稿。条件に合うメンターを事務局がお探しします。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mkzugfel.gensparkspace.com/consult.html">
+  <link rel="canonical" href="https://mkzugfel.gensparkspace.com/consult.html">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- ========== Header ========== -->
   <header>
     <div class="container nav">
-      <div class="brand">スポーツ・部活動相談室</div>
-      <nav class="links">
+      <a href="index.html" class="brand">スポーツ現場の実務メンターマッチング</a>
+      <nav class="nav-links">
         <a href="index.html">ホーム</a>
-        <a href="consult.html">無料相談</a>
-        <a href="qa.html">Q&A</a>
-        <a href="mentoring.html">現場メンタリング</a>
-        <a href="experts.html">専門家の方へ</a>
-        <a class="btn btn-primary" href="consult.html">無料で相談する</a>
+        <a href="consult.html">相談投稿</a>
+        <a href="experts.html">メンター一覧・募集</a>
+        <a href="mentoring.html">運営サポート</a>
+        <a href="instructor.html">団体向け</a>
+        <a href="qa.html">Q&amp;A</a>
+        <a href="legal.html">利用規約</a>
+        <a class="btn btn-primary btn-sm" href="consult.html">無料で相談投稿</a>
       </nav>
     </div>
   </header>
 
+  <!-- ========== Hero ========== -->
+  <section class="hero" style="padding:48px 0 40px;">
+    <div class="container">
+      <h1 style="font-size:clamp(22px,4vw,34px);">無料で相談を投稿する</h1>
+      <p>まずは無料で悩みを投稿してください。条件に合うメンターを事務局がお探しします。<br>投稿しただけでは料金は発生しません。メンターを選択し決済を完了した時点で初めて料金が発生します。</p>
+    </div>
+  </section>
+
+  <!-- ========== ステップ表示 ========== -->
   <section class="section section-alt">
     <div class="container">
-      <h2>無料相談（一次対応）</h2>
-      <p class="lead">匿名OK・費用0円・48時間以内に返信します。</p>
-      <div class="notice">
-        <strong>緊急時は公的機関へ：</strong><br>
-        警察 110 / 救急 119 / 児童相談所 189<br>
+      <h2 class="text-center">利用の流れ</h2>
+      <div class="container-narrow mt-3" style="margin:0 auto;">
+        <div class="steps">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>投稿は無料</h3>
+              <p>下記フォームで相談内容・希望プラン・メンター条件を入力して投稿します。この時点で費用はかかりません。</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>事務局がメンター候補を紹介</h3>
+              <p>事務局が内容を確認し、条件に合うメンターに案内。対応可能なメンターが応募した後、候補をご紹介します。</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>選んで決済 → 相談開始</h3>
+              <p>メンターを選択し、プラットフォーム上で決済を完了すると、相談がスタートします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 対象外の注意 ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="notice notice-info">
+        <strong>本サービスの対象範囲について</strong><br>
+        スポーツ現場の実務的なアドバイスを提供するサービスです。法律相談、税務相談、医療行為、診断、治療、心理療法を目的としたサービスではありません。これらが必要な場合は、法テラス、税理士会、医療機関等の専門機関をご案内します。
+      </div>
+      <div class="notice notice-danger mt-2">
+        <strong>緊急時は公的機関へ：</strong>警察 110 / 救急 119 / 児童相談所 189<br>
         ※本サイトは緊急通報の代替ではありません。
       </div>
     </div>
   </section>
 
+  <!-- ========== 相談投稿フォーム ========== -->
+  <section class="section section-alt" id="form">
+    <div class="container-narrow">
+      <h2>相談投稿フォーム</h2>
+      <p class="section-lead">相談投稿は無料です。以下のフォームに必要事項をご入力ください。</p>
+
+      <!-- フォーム本体（実際にはTODO_FORM_URLへ送信） -->
+      <form action="TODO_FORM_URL" method="POST" id="consultForm">
+
+        <!-- (A) 基本情報 -->
+        <h3 class="mt-4 mb-2" style="color:var(--primary);border-bottom:2px solid var(--bg);padding-bottom:8px;">A. 基本情報</h3>
+
+        <div class="form-group">
+          <label for="name">お名前（ニックネーム可）<span class="text-accent">*</span></label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="例：サッカー太郎" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">メールアドレス（連絡用）<span class="text-accent">*</span></label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="例：example@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="role">あなたの立場 <span class="text-accent">*</span></label>
+          <select id="role" name="role" class="form-control" required>
+            <option value="">選択してください</option>
+            <option value="指導者">指導者</option>
+            <option value="保護者">保護者</option>
+            <option value="チーム運営者">チーム運営者</option>
+            <option value="選手（18歳以上）">選手（18歳以上）</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="sport">競技 <span class="text-accent">*</span></label>
+          <select id="sport" name="sport" class="form-control" required>
+            <option value="">選択してください</option>
+            <option value="サッカー">サッカー</option>
+            <option value="野球・ソフトボール">野球・ソフトボール</option>
+            <option value="バスケットボール">バスケットボール</option>
+            <option value="バレーボール">バレーボール</option>
+            <option value="陸上">陸上</option>
+            <option value="テニス">テニス</option>
+            <option value="卓球">卓球</option>
+            <option value="水泳">水泳</option>
+            <option value="武道">武道</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+
+        <!-- (B) 相談内容 -->
+        <h3 class="mt-4 mb-2" style="color:var(--primary);border-bottom:2px solid var(--bg);padding-bottom:8px;">B. 相談内容</h3>
+
+        <div class="form-group">
+          <label for="category">相談カテゴリ <span class="text-accent">*</span></label>
+          <select id="category" name="category" class="form-control" required>
+            <option value="">選択してください</option>
+            <option value="保護者対応">保護者対応</option>
+            <option value="練習方針">練習方針</option>
+            <option value="チームづくり">チームづくり</option>
+            <option value="クラブ運営">クラブ運営</option>
+            <option value="選手との関わり方">選手との関わり方</option>
+            <option value="進路と競技の両立">進路と競技の両立</option>
+            <option value="トレーニング">トレーニング</option>
+            <option value="指導者自身の悩み整理">指導者自身の悩み整理</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="detail">具体的な悩み・状況（300字程度）<span class="text-accent">*</span></label>
+          <textarea id="detail" name="detail" class="form-control" rows="6" placeholder="今困っていること、背景、具体的な状況をできるだけ詳しくお書きください。" required maxlength="500"></textarea>
+          <div class="form-note">※ 個人名や学校名等の特定情報は伏せていただいても構いません。</div>
+        </div>
+
+        <!-- (C) 相談方式と料金プランの選択 -->
+        <h3 class="mt-4 mb-2" style="color:var(--primary);border-bottom:2px solid var(--bg);padding-bottom:8px;">C. 相談方式と料金プランの選択</h3>
+        <p class="text-small text-light mb-2">料金は完全固定制です。表示料金以外の追加請求はありません。相談料にはシステム利用料が含まれています。</p>
+
+        <div class="radio-group">
+          <label class="radio-item">
+            <input type="radio" name="plan" value="メール相談5000" required>
+            <div class="radio-label">
+              <strong>プランA：メール相談 5,000円（税込）</strong>
+              <span>質問400字以内 / 回答400字以内 / 1往復</span>
+            </div>
+          </label>
+          <label class="radio-item">
+            <input type="radio" name="plan" value="メール相談10000">
+            <div class="radio-label">
+              <strong>プランB：メール相談 10,000円（税込）</strong>
+              <span>質問400字以内 / 回答400字以内 / 1往復</span>
+            </div>
+          </label>
+          <label class="radio-item">
+            <input type="radio" name="plan" value="音声通話30分12000">
+            <div class="radio-label">
+              <strong>プランC：音声通話 30分 12,000円（税込）</strong>
+              <span>ブラウザ通話 / Zoom</span>
+            </div>
+          </label>
+          <label class="radio-item">
+            <input type="radio" name="plan" value="音声通話60分20000">
+            <div class="radio-label">
+              <strong>プランD：音声通話 60分 20,000円（税込）</strong>
+              <span>ブラウザ通話 / Zoom</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="notice notice-info">
+          <strong>プラン間の違いについて</strong><br>
+          メール相談の5,000円と10,000円は、相談形式（400字以内・1往復）は同じです。違いはメンターへの報酬額です。<br>
+          <strong>より高いプランを選ぶと、メンターへの報酬が高くなるため、経験豊富なメンターからの応募が集まりやすくなります。</strong>
+        </div>
+
+        <!-- (D) 希望するメンターの条件 -->
+        <h3 class="mt-4 mb-2" style="color:var(--primary);border-bottom:2px solid var(--bg);padding-bottom:8px;">D. 希望するメンターの条件（複数選択可）</h3>
+        <p class="text-small text-light mb-2">すべて該当する必要はありません。希望に近いものをお選びください。</p>
+
+        <!-- 指導カテゴリ -->
+        <div class="checkbox-group">
+          <h4>📋 指導カテゴリ</h4>
+          <div class="checkbox-grid">
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="小学生年代の指導経験あり"><span>小学生年代の指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="中学生年代の指導経験あり"><span>中学生年代の指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="高校生年代の指導経験あり"><span>高校生年代の指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="大学生年代の指導経験あり"><span>大学生年代の指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="社会人チームの指導経験あり"><span>社会人チームの指導経験あり</span></label>
+          </div>
+        </div>
+
+        <!-- 実績カテゴリ -->
+        <div class="checkbox-group">
+          <h4>🏆 実績カテゴリ</h4>
+          <div class="checkbox-grid">
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="全国大会出場経験あり"><span>全国大会出場経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="都道府県大会上位入賞経験あり"><span>都道府県大会上位入賞経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="10年以上の指導歴あり"><span>10年以上の指導歴あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="20年以上の指導歴あり"><span>20年以上の指導歴あり</span></label>
+          </div>
+        </div>
+
+        <!-- 所属・環境カテゴリ -->
+        <div class="checkbox-group">
+          <h4>🏫 所属・環境カテゴリ</h4>
+          <div class="checkbox-grid">
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="公立中学校での指導経験あり"><span>公立中学校での指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="公立高校での指導経験あり"><span>公立高校での指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="私立中学校・高校での指導経験あり"><span>私立中学校・高校での指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="大学での指導経験あり"><span>大学での指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="クラブチーム（街クラブ）での指導経験あり"><span>クラブチーム（街クラブ）での指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="Jリーグトップチームでの指導経験あり"><span>Jリーグトップチームでの指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="Jリーグ下部組織（アカデミー）での指導経験あり"><span>Jリーグ下部組織（アカデミー）での指導経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="Jリーグスクールコーチ経験あり"><span>Jリーグスクールコーチ経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="実業団・社会人チームでの指導経験あり"><span>実業団・社会人チームでの指導経験あり</span></label>
+          </div>
+        </div>
+
+        <!-- 専門分野カテゴリ -->
+        <div class="checkbox-group">
+          <h4>⚙️ 専門分野カテゴリ</h4>
+          <div class="checkbox-grid">
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="GKコーチ経験あり"><span>GKコーチ経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="フィジカルコーチ / トレーナー経験あり"><span>フィジカルコーチ / トレーナー経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="メンタルコーチ経験あり"><span>メンタルコーチ経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="チームビルディング・組織づくり経験あり"><span>チームビルディング・組織づくり経験あり</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="保護者対応に強い"><span>保護者対応に強い</span></label>
+            <label class="checkbox-item"><input type="checkbox" name="mentor_cond[]" value="クラブ運営・マネジメント経験あり"><span>クラブ運営・マネジメント経験あり</span></label>
+          </div>
+        </div>
+
+        <!-- (E) 18歳未満の方へ -->
+        <h3 class="mt-4 mb-2" style="color:var(--primary);border-bottom:2px solid var(--bg);padding-bottom:8px;">E. 18歳未満の方へ</h3>
+
+        <div class="notice">
+          18歳未満の方は保護者の方を通じてお申し込みください。<br>
+          以下に保護者のメールアドレスをご記入ください。
+        </div>
+
+        <div class="form-group">
+          <label for="parent_email">保護者のメールアドレス（18歳未満の場合のみ）</label>
+          <input type="email" id="parent_email" name="parent_email" class="form-control" placeholder="例：parent@email.com">
+          <div class="form-note">※ 18歳以上の方は空欄で構いません。</div>
+        </div>
+
+        <!-- 同意 -->
+        <div class="form-group mt-4">
+          <label class="checkbox-item" style="padding:12px;background:var(--bg);border-radius:8px;">
+            <input type="checkbox" name="agree" required>
+            <span><a href="legal.html" target="_blank">利用規約</a>・<a href="legal.html#privacy" target="_blank">プライバシーポリシー</a>に同意の上、投稿します。</span>
+          </label>
+        </div>
+
+        <!-- 投稿ボタン -->
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-primary btn-lg">相談を投稿する（無料）</button>
+        </div>
+        <p class="text-center text-small text-light mt-2">※ 投稿は無料です。メンターを選択し決済を完了するまで料金は発生しません。</p>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== こんな悩みをご相談ください ========== -->
   <section class="section">
     <div class="container">
-      <h2>このページでできること</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>初動対応の整理</h3>
-          <p>怪我・熱中症・トラブル発生時に、今何を優先すべきかを整理します。</p>
-        </article>
-        <article class="card">
-          <h3>相談先の案内</h3>
-          <p>必要に応じて、公的窓口や専門家への接続方針をご案内します。</p>
-        </article>
-        <article class="card">
-          <h3>継続課題の整理</h3>
-          <p>再発防止や体制改善が必要な場合は、有料メンタリングをご案内します。</p>
-        </article>
+      <h2 class="text-center">こんな悩みをご相談ください</h2>
+      <div class="grid grid-2 mt-3">
+        <div class="card">
+          <span class="card-icon">📋</span>
+          <h3>指導・チームづくり</h3>
+          <ul style="font-size:14px;color:var(--text-light);">
+            <li>練習メニューの組み立て方</li>
+            <li>選手のモチベーション管理</li>
+            <li>試合での采配・戦術</li>
+            <li>チーム内の人間関係調整</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="card-icon">👥</span>
+          <h3>保護者対応</h3>
+          <ul style="font-size:14px;color:var(--text-light);">
+            <li>保護者からのクレーム対応</li>
+            <li>保護者会の運営方法</li>
+            <li>保護者との距離感</li>
+            <li>情報共有の仕方</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="card-icon">⚙️</span>
+          <h3>クラブ・チーム運営</h3>
+          <ul style="font-size:14px;color:var(--text-light);">
+            <li>会計処理の透明化</li>
+            <li>スケジュール管理</li>
+            <li>イベント企画・運営</li>
+            <li>役員・スタッフとの連携</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="card-icon">💪</span>
+          <h3>トレーニング</h3>
+          <ul style="font-size:14px;color:var(--text-light);">
+            <li>トレーニングメニュー作成</li>
+            <li>怪我予防の取り組み</li>
+            <li>コンディション管理</li>
+            <li>リカバリー方法</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="notice notice-info mt-3">
+        <strong>⚠️ ご相談いただけない内容</strong><br>
+        本サービスはスポーツ現場の実務的なアドバイスを提供するものです。法律相談・税務相談・医療行為・診断・治療・心理療法・職業紹介は対象外です。該当する場合は、専門機関（法テラス、税理士会、医療機関等）をご案内します。
       </div>
     </div>
   </section>
 
+  <!-- ========== CTA ========== -->
   <section class="section section-alt">
-    <div class="container cta">
-      <h2 style="color:#fff; margin-top:0;">無料相談フォームへ</h2>
-      <p>以下のボタンからフォームに進んでください（3〜5分程度）。</p>
-      <p>
-        <a class="btn btn-primary" href="https://forms.google.com" target="_blank" rel="noopener">
-          無料相談フォームを開く
-        </a>
-      </p>
-      <p class="small">※ `https://forms.google.com` は実際のフォームURLに差し替えてください。</p>
+    <div class="container">
+      <div class="cta-box">
+        <h2>まずは無料で相談を投稿</h2>
+        <p>スポーツ現場を知るメンターが、あなたの悩みに実践的にアドバイスします。</p>
+        <a class="btn btn-primary btn-lg" href="#form">フォームへ戻る ↑</a>
+      </div>
     </div>
   </section>
 
+  <!-- ========== Footer ========== -->
   <footer>
     <div class="container">
-      <p><a href="legal.html">利用規約・プライバシーポリシー・特商法表記</a></p>
-      <p class="small">© 2026 スポーツ・部活動相談室</p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>サービス</h4>
+          <a href="index.html">ホーム</a>
+          <a href="consult.html">相談を投稿する</a>
+          <a href="experts.html">メンター一覧・募集</a>
+          <a href="mentoring.html">運営サポート</a>
+          <a href="instructor.html">団体向け相談</a>
+        </div>
+        <div class="footer-col">
+          <h4>サポート</h4>
+          <a href="qa.html">よくある質問</a>
+          <a href="legal.html">利用規約</a>
+          <a href="legal.html#privacy">プライバシーポリシー</a>
+          <a href="legal.html#tokusho">特定商取引法に基づく表記</a>
+        </div>
+        <div class="footer-col">
+          <h4>注意事項</h4>
+          <p style="font-size:12px;color:#8a9fb5;line-height:1.6;">本サービスは法律相談、税務相談、医療行為、診断、治療、心理療法を目的としたサービスではありません。</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 スポーツ現場の実務メンターマッチング All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
 </body>
 </html>

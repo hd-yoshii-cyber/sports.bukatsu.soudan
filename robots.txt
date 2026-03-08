@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mkzugfel.gensparkspace.com/sitemap.xml
